@@ -1,36 +1,41 @@
-# Scalable Array Multiplier Design in Verilog
+# Array Multiplier Design in Verilog
 
-## Description
-Designed a scalable array multiplier architecture supporting 8-bit, 16-bit,
-and 32-bit multiplication using Verilog HDL. The design is based on
-combinational array multiplier architecture using Half Adders and Full Adders.
+This project implements array multipliers of different word sizes using Verilog HDL.
 
-## Features
-- 8×8, 16×16, and 32×32 bit array multipliers
-- Modular and scalable RTL design
-- Separate testbenches for each configuration
-- Verified through simulation
+## Implementations
+- 8-bit Array Multiplier
+- 16-bit Array Multiplier
+- 32-bit Array Multiplier
+Each design is built using combinational logic with Half Adder and Full Adder based partial product accumulation.
 
 ## RTL Schematic
 ### 8-bit Multiplier
 ![8-bit](images/schematic_8bit.png)
-
 ### 16-bit Multiplier
 ![16-bit](images/schematic_16bit.png)
-
 ### 32-bit Multiplier
 ![32-bit](images/schematic_32bit.png)
+
+
+## Verification
+- Separate testbenches for 8-bit, 16-bit, and 32-bit multipliers
+- Exhaustive and randomized test cases
+- Functional verification through simulation
 
 ## Simulation Results
 ### 8-bit
 ![sim8](images/sim_8bit.png)
-
 ### 16-bit
 ![sim16](images/sim_16bit.png)
-
 ### 32-bit
 ![sim32](images/sim_32bit.png)
 
+
+## Files
+- multi_8bit.v / multi_8bit_tb.v
+- multi_16bit.v / multi_16bit_tb.v
+- multi_32bit.v / multi_32bit_tb.v
+
 ## Tools
 - Verilog HDL
-- Vivado / GTKWave
+- ModelSim / Vivado Simulator
